@@ -14,10 +14,10 @@ g <- ggplot(df_order, aes(x=ORDER_DATE, y=SHIPPED_DATE)) + geom_point(color="fir
 g<-g+labs(x="Order Date", y="Shipped Date", title="Orders")
 
 # make title bold
-g <-g+theme(plot.title = element_text(size=30,lineheight=.8, vjust=1,family="Bauhaus 93"))
+g <-g+theme(plot.title = element_text(size=30,lineheight=.8, vjust=1))
 
 #format x and y axis
-g <-g + theme(axis.text.x=element_text(angle=50, size=20, vjust=0.5))
+g <-g + theme(axis.text.x=element_text(angle=90, size=8, vjust=0.5))
 #print plot
 g
 

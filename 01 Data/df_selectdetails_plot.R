@@ -10,6 +10,15 @@ df_details <- data.frame(eval(parse(text=substring(getURL(URLencode('http://129.
 #create ggplot
 g <- ggplot(df_details, aes(x=ITEM_ID)) + geom_histogram()
 
+# add title and x and y labs
+g<-g+labs(x="Item ID", y="Number of Orders", title="Order Details")
+
+# make title bold
+g <-g+theme(plot.title = element_text(size=30,lineheight=.8, vjust=1))
+
+#format x and y axis
+g <-g + theme(axis.text.x=element_text(angle=50, size=20, vjust=0.5))
+
 #print plot
 g
 

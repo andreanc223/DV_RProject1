@@ -11,10 +11,10 @@ df_cust <- data.frame(eval(parse(text=substring(getURL(URLencode('http://129.152
 g <- ggplot(df_cust, aes(x=CUSTOMER_STATE)) + geom_histogram()
 
 # add title and x and y labs
-g<-g+labs(x="State", y="Number of Customers", title="Orders")
+g<-g+labs(x="State", y="Number of Customers", title="Customers")
 
 # make title bold
-g <-g+theme(plot.title = element_text(size=30,lineheight=.8, vjust=1,family="Bauhaus 93"))
+g <-g+theme(plot.title = element_text(size=30,lineheight=.8, vjust=1))
 
 #format x and y axis
 g <-g + theme(axis.text.x=element_text(angle=50, size=20, vjust=0.5))

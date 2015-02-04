@@ -14,22 +14,26 @@ output: html_document
 source("../01 Data/df_selectorders.R", echo= TRUE)
 ```
 
+###Customers Table
 Pulling the customer table information to plot how many customers are from each state.
 ```{r fig.width=10, fig.height=10}
 source("../01 Data/df_selectcustomers_plot.R", echo= TRUE)
 ```
 
-Pulling customers details table information to plot how many times an item was ordered.
+###Order Details Table
+Pulling order details table information to plot how many times an item was ordered.
 ```{r fig.width=10, fig.height=10}
 source("../01 Data/df_selectdetails_plot.R", echo= TRUE)
 ```
 
+###Items Table
 Pulling items table information to plot how much each item cost.
 ```{r fig.width=10, fig.height=10}
 source("../01 Data/df_selectitems_plot.R", echo= TRUE)
 ```
 
-Pulling items table information to plot how long it took between when a customer ordered an item and it got shipped.
+###Orders Table
+Pulling order table information to plot how long it took between when a customer ordered an item and it got shipped.
 ```{r fig.width=10, fig.height=10}
 source("../01 Data/df_selectorders_plot.R", echo= TRUE)
 ```
