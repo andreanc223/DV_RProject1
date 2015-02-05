@@ -1,7 +1,6 @@
 #add libraries
 library("RCurl", lib.loc="~/R/win-library/3.1")
 library(ggplot2)
-library(extrafont)
 library(scales)
 
 #create data frame

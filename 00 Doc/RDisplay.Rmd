@@ -17,23 +17,23 @@ source("../01 Data/df_selectorders.R", echo= TRUE)
 ###Customers Table
 Pulling the customer table information to plot how many customers are from each state.
 ```{r fig.width=10, fig.height=10}
-source("../01 Data/df_selectcustomers_plot.R", echo= TRUE)
+source("../02 Visualizations/df_selectcustomers_plot.R", echo= TRUE)
 ```
 
 ###Order Details Table
 Pulling order details table information to plot how many times an item was ordered.
 ```{r fig.width=10, fig.height=10}
-source("../01 Data/df_selectdetails_plot.R", echo= TRUE)
+source("../02 Visualizations/df_selectdetails_plot.R", echo= TRUE)
 ```
 
 ###Items Table
 Pulling items table information to plot how much each item cost.
 ```{r fig.width=10, fig.height=10}
-source("../01 Data/df_selectitems_plot.R", echo= TRUE)
+source("../02 Visualizations/df_selectitems_plot.R", echo= TRUE)
 ```
 
 ###Orders Table
 Pulling order table information to plot how long it took between when a customer ordered an item and it got shipped.
 ```{r fig.width=10, fig.height=10}
-source("../01 Data/df_selectorders_plot.R", echo= TRUE)
+source("../02 Visualizations/df_selectorders_plot.R", echo= TRUE)
 ```
